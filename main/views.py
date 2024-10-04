@@ -16,30 +16,26 @@ class HomeView(View):
 class Home2View(View):
     def get(self, request):
         
-        return render(request, 'dashboard/index2.html')
+        return render(request, 'dashboard/index-2.html')
     
 
 class Home3View(View):
     def get(self, request):
         
-        return render(request, 'dashboard/index3.html')
+        return render(request, 'dashboard/index-3.html')
     
 
 class Home4View(View):
     def get(self, request):
         
-        return render(request, 'dashboard/index4.html')
+        return render(request, 'dashboard/index-4.html')
     
 
 class Home5View(View):
     def get(self, request):
         
-        return render(request, 'dashboard/index5.html')
+        return render(request, 'dashboard/index-5.html')
     
-class Blog(View):
-    def get(self, request):
-        
-        return render(request, 'dashboard/blog.html')
 
 class AnalyticsView(View):
     def get(self, request):
@@ -50,20 +46,44 @@ class AnalyticsView(View):
 class CrmView(View):
     def get(self, request):
         
-        return render(request, 'crm.html')
-    
+        return render(request, 'dashboard/crm.html')
 
-class App_CalenderView(View):
+
+class ProductsView(View):
     def get(self, request):
         
-        return render(request, 'app-calender.html')
+        return render(request, 'dashboard/products.html')
+
+
+class SalesView(View):
+    def get(self, request):
+        
+        return render(request, 'dashboard/sales.html')
+    
+
+class Blog(View):
+    def get(self, request):
+        
+        return render(request, 'dashboard/blog.html')
+
+
+class App_CalendarView(View):
+    def get(self, request):
+        
+        return render(request, 'apps/app-calender.html')
     
 
 class App_Profile_1(View):
     def get(self, request):
         
-        return render(request, 'app-profile-1.html')
+        return render(request, 'apps/user-manager/app-profile-1.html')
     
+
+class App_Profile_2(View):
+    def get(self, request):
+        
+        return render(request, 'apps/user-manager/app-profile-2.html')
+
 
 class Chart_chartist(View):
     def get(self, request):
@@ -104,15 +124,7 @@ class Chart_sparkline(View):
 class Chatview(View):
     def get(self, request):
         
-        return render(request, 'chat.html')
-    
-
-    
-
-class App_Profile_2(View):
-    def get(self, request):
-        
-        return render(request, 'app-profile-2.html')
+        return render(request, 'pages/chat.html')
     
 
 class Ecom_CheckoutView(View):
@@ -120,7 +132,6 @@ class Ecom_CheckoutView(View):
         
         return render(request, 'ecom/ecom-checkout.html')
     
-
 
 class Ecom_CustomersView(View):
     def get(self, request):
